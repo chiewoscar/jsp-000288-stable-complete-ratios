@@ -22,7 +22,7 @@ Replace the placeholders after publishing this package:
   {
     "repository": "https://github.com/chiewoscar/jsp-000288-stable-complete-ratios",
     "branch": "main",
-    "commit": "FULL_40_CHARACTER_COMMIT_SHA"
+    "commit": "a1a7a10e6b2362febed48dc8e928a9cdad7df8f7"
   },
   {
     "repository": "https://github.com/plby/lean-proofs",
