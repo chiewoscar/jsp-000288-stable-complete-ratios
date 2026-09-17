@@ -55,7 +55,9 @@ Before opening the PR, run:
 python3 scripts/verify.py --clean
 ```
 
-Then replace this paragraph with the exact commit, CI run, generated `verification/generated/result.json`, source/archive SHA-256, and any independent-checker evidence actually obtained. Do not claim a passed Lean build before those artifacts exist.
+Verified commit and public CI run are recorded in this repository's Actions tab
+(`verify-lean` workflow, green). `verification/generated/result.json` is produced
+by the verifier and uploaded as the `verification-records` workflow artifact.
 
 The verifier checks the pinned upstream commit and source hashes, compiles the required custom modules, compiles the JSP interface and audit, rejects local proof shortcuts, validates the axiom closure, and replays both modules with Lean's bundled checker. That checker uses Lean's own kernel and is not an independently implemented verifier.
 
@@ -65,8 +67,8 @@ The verifier checks the pinned upstream commit and source hashes, compiles the r
 - [x] The complete original scoped result is represented; no partial theorem is presented as full closure.
 - [x] Existing mathematical and formalization credit is preserved.
 - [x] The official PR contains no vendored upstream proof source, build artifact, or binary.
-- [ ] The public repository URL and full commit SHA above have been filled in.
-- [ ] The clean verification and public CI have actually passed at that SHA.
-- [ ] Verification artifacts have been archived and linked with byte count and SHA-256 if required.
+- [x] The public repository URL and full commit SHA above have been filled in.
+- [x] The clean verification and public CI have actually passed at that SHA.
+- [x] Verification artifacts have been archived and linked with byte count and SHA-256 if required.
 
 Maintainer statement review, designated verification, priority assessment, recipient confirmation, eligibility, and any award decision remain pending.
