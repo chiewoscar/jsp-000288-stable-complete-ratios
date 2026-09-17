@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "problem_id": "JSP-000288",
+  "erdos_problem": 346,
+  "created_date": "2026-09-17",
+  "upstream": {
+    "repository": "https://github.com/plby/lean-proofs.git",
+    "commit": "8822f7ddef30fadbd92e1c6ab4ed897af356af5e",
+    "workspace": "src/latest",
+    "toolchain": "leanprover/lean4:v4.33.0",
+    "mathlib_commit": "db584cd6d46c92f209a44c0f1c829460d327499d",
+    "source_files": [
+      {
+        "path": "ErdosProblems/Erdos346/Proof.lean",
+        "sha256": "58844d223a1a48cba766328204b781f57981a8851d0a2a004e62f3a1802b615a"
+      },
+      {
+        "path": "ErdosProblems/Erdos346.lean",
+        "sha256": "be9697c4eadb237e98d9a0e1c5a01120845ed538e6b482e1c57dc5a2e31a7295"
+      }
+    ],
+    "target_module": "ErdosProblems.Erdos346",
+    "theorems": [
+      "Erdos346.erdos_346_counterexample",
+      "Erdos346.not_erdos_346"
+    ],
+    "comparator_path": "ComparatorChallenges/ErdosProblems/Erdos346.json",
+    "comparator": {
+      "enable_nanoda": false,
+      "permitted_axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "theorem_names": [
+        "Erdos346.erdos_346_counterexample",
+        "Erdos346.not_erdos_346"
+      ]
+    }
+  },
+  "local": {
+    "wrapper": "JSP000288.lean",
+    "module": "JSP000288",
+    "theorems": [
+      "JSP000288.counterexample",
+      "JSP000288.solution"
+    ]
+  },
+  "verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "prohibited_local_constructs": [
+      "sorry",
+      "admit",
+      "axiom declarations",
+      "native_decide",
+      "unsafe",
+      "implemented_by",
+      "Lean.ofReduceBool"
+    ]
+  }
+}
